@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DRIPPY</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="icon" href="img/Drippy.png" type="image/x-icon" />
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <div id="loaderz-wrapper">
+    <div id="loaderz"><img src="img/loader.png" width="100" height="100" /></div>
+    <div class="loaderz-section"></div>
+    <div id="preload-content"></div>
+  </div>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/preloader.css" rel="stylesheet">
+
+
+</head>
+
+<body onload="myFunction()" style="margin:0;" id="page-top">
+
+
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '1162885887166984',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.11'
+    });
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  </script>
+
+
+
+<!-- <script src="js/jquery.js"></script> -->
+<!-- Navigation -->
+
+
+<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="logo-main" src="img/Drippy.png" width="45" height="50" alt="main logo" style="margin-right:4px;margin-bottom:5px;">Drippy</a>
+    <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#water_tips">SAVE WATER</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#city_map">WATER MAP</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#facebook_blogs">BLOG</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="masthead text-center">
+
+
+  <div class="container head">
+    <h1 style="font-size:100px" id="value">360</h1>
+    <div id="loaders">
+
+        <!-- <div id="loader"></div>
+        <div id="loader2"></div> -->
+
+        <!-- <div class="fader" style="display:none;"> -->
+
+          <div style:class="display:none;" id="myDiv; display: none" class="animate-bottom">
+              <h1 style="color: #00bfff;">136</h1>
+          </div>
+        <!-- </div> -->
+
+    </div>
+    <h1>DAYS TILL DAY ZERO</h1>
+    <h2 class="font-weight-light">Dam levels are currently at <span>25.5%</span></h2>
+    <!-- <h1 id="count_down_timer"></h1> -->
+  </div>
+</header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script>
+//     var myVar;
+//
+// function myFunction() {
+//     myVar = setTimeout(showPage, 1000);
+// }
+//
+// function showPage() {
+//   document.getElementById("loader").style.display = "none";
+//   document.getElementById("loader2").style.display = "none";
+//   document.getElementById("myDiv").style.display = "block";
+// }
+//
+//   $('#loader').delay(1000).fadeOut(1000);
+//   $('#loader2').delay(1000).fadeOut(1000);
+
+  $('#loaderz-wrapper').delay(500).fadeOut(800);
+  $('#value').delay(2000).fadeIn(1000);
+
+  </script>
+<!-- About Section -->
+
+<!-- About Section -->
+<section class="bg-white xt-white mb-0" id="about">
+  <div class="container">
+    <h2 class="text-center text-uppercase">About</h2>
+    <hr class="star-light mb-5">
+    <div class="row about_drippy">
+      <img src="img/Drippy.png" alt="" height="320" width="300">
+       <div class="speech-bubble">
+        <p><h4>Hi! My name is Drippy...</h4> ...and I'm here to help you save water. I check dam levels, municipal restrictions and weather patterns in their current locations to help you make informed decisions on when to water your plants and gardens.<a href="#water_tips">See my water saving tips</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Portfolio Grid Section -->
+<section class="portfolio" id="water_tips">
+  <div class="container">
+    <h2 class="text-center text-uppercase text-secondary mb-0">Drippy Tips</h2>
+    <hr class="star-dark mb-5">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+            <div class="portfolio-item-caption-content my-auto w-100 text-center" style="color:#00bfff">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/Bathroom.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+            <div class="portfolio-item-caption-content my-auto w-100 text-center" style="color:#00bfff">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/Indoor.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+            <div class="portfolio-item-caption-content my-auto w-100 text-center" style="color:#00bfff">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/Kitchen.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+            <div class="portfolio-item-caption-content my-auto w-100 text-center" style="color:#00bfff">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/Laundry.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+            <div class="portfolio-item-caption-content my-auto w-100 text-center" style="color:#00bfff">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/Lawn.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+          <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+            <div class="portfolio-item-caption-content my-auto w-100 text-center" style="color:#00bfff">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/Outdoor.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="city_map">
+
+  <div class="container">
+    <h2 class="text-center text-uppercase text-secondary mb-0">City Water Map</h2>
+    <hr>
+    <h4 class="text-center">Check out how many litres of water you've been using by clicking on the image below.</h4>
+    <p class="text-center">The City Water Map provides information on how many litres you're household uses and let's you know if you're in the clear or not</p>
+
+    <a href="https://citymaps.capetown.gov.za/waterviewer/" target="_blank"><img src="img/city_map.PNG" alt="" width="100%" height="800"></a>
+
+</div>
+</div>
+
+</section>
+
+<section class="blog" id="facebook_blogs">
+
+  <div class="container">
+    <h2 class="text-center text-secondary mb-0 style: padding-bottom:10px;">BLOG</h2>
+    <hr>
+    <div class="row container blogs">
+      <div class="col-md">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FDrippyProject%2Fposts%2F1684624921598068&width=500" width="500" height="621" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+      <div class="col-md">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FDrippyProject%2Fposts%2F1684619234931970&width=500" width="500" height="621" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+      <div class="col-md">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FDrippyProject%2Fposts%2F1683516655042228&width=500" width="500" height="621" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+      <div class="col-md">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FDrippyProject%2Fposts%2F1683501828377044&width=500" width="500" height="621" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="row fb_section">
+<div class="fb-page" data-href="https://www.facebook.com/DrippyProject/" data-tabs="timeline" data-width="300px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/DrippyProject/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DrippyProject/">Drippy</a></blockquote></div>
+
+</div>
+</section>
+
+  <!--footer  -->
+
+  <footer class="container-fluid footer_sub">
+    <div class="subscribe">
+      <h4 class="text-center text-secondary"><a href="">Subscribe to Drippy</a></h4>
+      <p style="color: white">©Drippy 2018 // Made with love by <span style="color:#00bfff">MakeBetter</span></p>
+    </div>
+  </footer>
+
+  <div class="fb-customerchat" page_id="1384253868301843" logged_in_greeting="Hi I'm Drippy, chat with me to get water tips and drought info." logged_out_greeting="Hi I'm Drippy, log in to Messenger and chat with me to get water tips and drought info."></div>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <h2 class="text-secondary pull-left text-uppercase mb-0">Bathroom Tips</h2>
+            <img class="img-fluid pull-right" src="img/portfolio/Bathroom.jpg" alt="" height="72px" width="350px">
+            <ul class="drippy_tips text-left">
+              <li>Collect your shower, bath and basin water and re-use it to flush your toilet, water the garden and wash your car.</li>
+              <li>Only flush the toilet when necessary. Don’t use it as a dustbin.</li>
+              <li>Use a cup instead of running taps in the bathroom or kitchen when brushing teeth, shaving, drinking, etc. </li>
+            </ul>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+            <i class="fa fa-close"></i>
+            Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-9 mx-auto">
+              <h2 class="text-secondary pull-left text-uppercase mb-0">Indoor Tips</h2>
+              <img class="img-fluid pull-right" src="img/portfolio/Indoor.jpg" alt="" height="72px" width="350px">
+              <ul class="drippy_tips text-left">
+                <li>Use municipal drinking water only for essential washing, cooking and drinking purposes, and only use indoors.</li>
+                <li>Prevent taps from leaking by turning taps off lightly and replace washers as soon as they begin to leak.</li>
+                <li>Cut your water use to less than 50 litres per person, per day.</li>
+              </ul>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Modal 3 -->
+      <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+        <div class="portfolio-modal-dialog bg-white">
+          <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+            <i class="fa fa-3x fa-times"></i>
+          </a>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-lg-9 mx-auto">
+                <h2 class="text-secondary pull-left text-uppercase mb-0">Kitchen Tips</h2>
+                <img class="img-fluid pull-right" src="img/portfolio/Kitchen.jpg" alt="" height="72px" width="350px">
+                <ul class="drippy_tips text-left">
+                  <li>Defrost foods in the fridge or naturally, rather than placing it under running water.</li>
+                  <li>Rinse glasses, cutlery and vegetables in a basin of water, reuse this water for potplants or in the garden.</li>
+                  <li>Automatic dishwashers use up to 40 lt of water per load. Use a dishwasher with at least a 3 star rating, you can get this figure down to 18 lt per load and still have sparkling clean dishes.</li>
+                </ul>
+                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Modal 4 -->
+        <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+          <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+              <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-lg-9 mx-auto">
+                  <h2 class="text-secondary pull-left text-uppercase mb-0">Laundry Tips</h2>
+                  <img class="img-fluid pull-right" src="img/portfolio/Laundry.jpg" alt="" height="72px" width="350px">
+                  <ul class="drippy_tips text-left">
+                    <li>Wait for a full load before running washing machines and dishwashers. Re-use the water for the next wash.</li>
+                    <li>Most washing machines have load adjustment buttons, set this to match the amount of washing you’re doing. If your machine does not have, wait for a full load.</li>
+                  </ul>
+                  <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                  <i class="fa fa-close"></i>
+                  Close</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Modal 5 -->
+          <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+            <div class="portfolio-modal-dialog bg-white">
+              <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+              </a>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-lg-9 mx-auto">
+                    <h2 class="text-secondary pull-left text-uppercase mb-0">Lawn Tips</h2>
+                    <img class="img-fluid pull-right" src="img/portfolio/Lawn.jpg" alt="" height="72px" width="350px">
+                    <ul class="drippy_tips text-left">
+                      <li>Plant indigenous or waterwise plants. Indigenous plants are genetically accustomed to the climate of South Africa. Exotic plant species are not accustomed to the climate and therefore need more watering.</li>
+                      <li>Re-use your bath and sink water to water lawns. Professional greywater recycling systems are also great to save water.</li>
+                    </ul>
+                    <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                    <i class="fa fa-close"></i>
+                    Close</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Modal 6 -->
+            <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+              <div class="portfolio-modal-dialog bg-white">
+                <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                  <i class="fa fa-3x fa-times"></i>
+                </a>
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col-lg-9 mx-auto">
+                      <h2 class="text-secondary pull-left text-uppercase mb-0">Outdoor Tips</h2>
+                      <img class="img-fluid pull-right" src="img/portfolio/Outdoor.jpg" alt="" height="72px" width="350px">
+                      <ul class="drippy_tips text-left">
+                        <li>Continue with pressure reduction programmes to reduce the flow of water at a time, as well as water losses through leakage in the pipework of the distribution system.</li>
+                        <li>Install a grey-water system if feasible. They can save up to 1,500 litres of water per week.</li>
+                        <li>Start collecting rain water. Water tanks can supply you with much needed rain that you can use whenever you want.</li>
+                      </ul>
+                      <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                      <i class="fa fa-close"></i>
+                      Close</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/javascript.min.js"></script>
+        <script type="text/javascript">
+        function animateValue(id, start, end, duration) {
+
+          var range = end - start;
+          var current = start;
+          var increment = end > start? 1 : -1;
+          var stepTime = Math.abs(Math.floor(duration / range));
+          var obj = document.getElementById(id);
+          var timer = setInterval(function() {
+            current += increment;
+            obj.innerHTML = current;
+            if (current == end) {
+              clearInterval(timer);
+            }
+          }, stepTime);
+        }
+
+        animateValue("value", 365, 292, 2000);
+
+      </script>
+
+
+
+
+
+    </body>
+
+    </html>
